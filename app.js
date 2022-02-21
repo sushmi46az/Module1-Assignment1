@@ -7,6 +7,16 @@ $scope.Name="Module1"
 $scope.ItemList=function(){
     console.log("entered itemlist")
 var totalString= getStringCount($scope.inputVal);
+var input=document.getElementById('txtInput');
+if(totalString <= 3)
+{
+    input.style.color="green";
+    alert("Enjoy !")
+}
+else{
+    input.style.color="red";
+    alert("Too Much")
+}
 $scope.totalStringval=totalString;
 
 }
